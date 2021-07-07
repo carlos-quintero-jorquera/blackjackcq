@@ -12,7 +12,7 @@ const divCartaInv = document.querySelector('#invitado');
 const divCartaLocal = document.querySelector('#local');
 const btnped = document.querySelector("#btnped");
 const btnnp = document.querySelector("#btnnp");
-
+const btnnnuevo = document.querySelector("#btnnuevo");
 
 const crearDeck = () => {
 
@@ -124,4 +124,16 @@ btnnp.addEventListener('click', () => {
     
 })
 
+btnnnuevo.addEventListener('click', () => {
+    btnped.disabled = false;
+    btnnp.disabled = false;
+    let puntosJugador=0,
+        puntosLocal=0;
+    puntosHtml[0].innerText = puntosJugador;
+    puntosHtml[1].innerText = puntosLocal;
+    
+     divCartaInv.innerHTML = '';  
+     divCartaLocal.innerHTML = ''; 
+   console.log(deck)
 
+    });
