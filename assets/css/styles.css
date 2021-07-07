@@ -6,8 +6,19 @@ html, body{
 .titulo{
     text-align: center;
     background-color: aqua;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
 }
-
+.cartas{
+    position: relative;
+    width: 200px;
+    left: 150px;
+    margin-left: -110px;
+}
+#invitado, #local{
+    height: 350px;
+}
 
 
 
